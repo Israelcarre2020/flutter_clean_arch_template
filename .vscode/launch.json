@@ -1,0 +1,71 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Development (Dev)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_dev.dart"
+        },
+        {
+            "name": "Integration (Int)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_int.dart"
+        },
+        {
+            "name": "Production (Prod)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_prod.dart"
+        },
+        {
+            "name": "Main (Default)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart"
+        },
+        {
+            "name": "Development (Profile)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_dev.dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Integration (Profile)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_int.dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Production (Profile)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_prod.dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Development (Release)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_dev.dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Integration (Release)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_int.dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Production (Release)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_prod.dart",
+            "flutterMode": "release"
+        }
+    ]
+}

@@ -1,0 +1,186 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run All Tests",
+            "type": "shell",
+            "command": "flutter test",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Run Tests with Coverage",
+            "type": "shell",
+            "command": "flutter test --coverage",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Generate Coverage Report",
+            "type": "shell",
+            "command": "flutter test --coverage && genhtml coverage/lcov.info -o coverage/html",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Open Coverage Report",
+            "type": "shell",
+            "command": "open coverage/html/index.html",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Test & View Coverage",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Generate Coverage Report",
+                "Open Coverage Report"
+            ],
+            "problemMatcher": [],
+            "group": "build"
+        },
+        {
+            "label": "Run Integration Tests",
+            "type": "shell",
+            "command": "flutter test integration_test/",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Clean & Get Dependencies",
+            "type": "shell",
+            "command": "flutter clean && flutter pub get",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Clean iOS Dependencies",
+            "type": "shell",
+            "command": "rm -rf ios/Pods ios/Podfile.lock ios/.symlinks ios/Flutter/Flutter.framework ios/Flutter/Flutter.podspec && flutter precache --ios && cd ios && pod install --repo-update && cd ..",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Build APK (Dev)",
+            "type": "shell",
+            "command": "flutter build apk -t lib/main_dev.dart",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Build APK (Prod)",
+            "type": "shell",
+            "command": "flutter build apk -t lib/main_prod.dart",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Run Code Generation",
+            "type": "shell",
+            "command": "dart run build_runner build --delete-conflicting-outputs",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Watch Code Generation",
+            "type": "shell",
+            "command": "dart run build_runner watch --delete-conflicting-outputs",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "isBackground": true,
+            "group": "build"
+        },
+        {
+            "label": "Generate Localizations",
+            "type": "shell",
+            "command": "flutter gen-l10n",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Setup Template",
+            "type": "shell",
+            "command": "./setup_template.sh --name \"${input:projectName}\" --bundle-id \"${input:bundleId}\" --org \"${input:organization}\" --flutter-version \"${input:flutterVersion}\"",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true
+            },
+            "group": "build"
+        },
+    ],
+    "inputs": [
+        {
+            "id": "projectName",
+            "type": "promptString",
+            "description": "Enter the project name (e.g., 'MyAwesomeApp')",
+            "default": "MyApp"
+        },
+        {
+            "id": "bundleId",
+            "type": "promptString",
+            "description": "Enter the Bundle ID (e.g., 'com.mycompany.myapp')",
+            "default": "com.example.myapp"
+        },
+        {
+            "id": "organization",
+            "type": "promptString",
+            "description": "Enter the organization name (e.g., 'MyCompany')",
+            "default": "MyCompany"
+        },
+        {
+            "id": "flutterVersion",
+            "type": "promptString",
+            "description": "Enter the Flutter version to use with FVM (e.g., '3.35.7')",
+            "default": "3.35.7"
+        }
+    ]
+}
