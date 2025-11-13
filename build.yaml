@@ -1,0 +1,44 @@
+# Build runner configuration
+# This file defines which builders to use and their options
+
+targets:
+  $default:
+    builders:
+      # Freezed builder for immutable classes
+      freezed:
+        enabled: true
+        options:
+          # Generate copyWith method
+          copyWith: true
+          # Generate toString method
+          toString: true
+          # Generate == operator and hashCode
+          equal: true
+
+      # Json Serializable for JSON conversion
+      json_serializable:
+        enabled: true
+        options:
+          # Generate code for fields even if they're private
+          any_map: false
+          # Check if required fields are null
+          checked: false
+          # Create factories from json
+          create_factory: true
+          # Create toJson methods
+          create_to_json: true
+          # Ignore @JsonKey on fields
+          disallow_unrecognized_keys: false
+          # Use snake_case for field names
+          field_rename: none
+          # Generate helpers for generic types
+          generic_argument_factories: false
+          # Include if null in toJson
+          include_if_null: true
+
+      # Retrofit for REST API client generation
+      retrofit_generator:
+        enabled: true
+        options:
+          # Generate null safety code
+          null_safety: true

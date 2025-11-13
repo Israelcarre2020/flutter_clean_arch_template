@@ -1,0 +1,34 @@
+# FlutterGen configuration file
+# https://pub.dev/packages/flutter_gen
+
+flutter_gen:
+  output: lib/gen/ # Optional (default: lib/gen/)
+  line_length: 80 # Optional (default: 80)
+
+  # Optional
+  integrations:
+    flutter_svg: false
+    flare_flutter: false
+    rive: false
+    lottie: false
+
+  colors:
+    inputs: []
+
+  assets:
+    enabled: true
+    package_parameter_enabled: false
+    style: dot-delimiter # Optional (default: dot-delimiter)
+    # Available values:
+    # - dot-delimiter
+    # - snake-case
+    # - camel-case
+
+  fonts:
+    enabled: true
+
+  # Optional
+  # Set to true if you want to exclude specific asset files
+  # from the generated code
+  # exclude:
+  #   - assets/images/ignore_me.png

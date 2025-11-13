@@ -1,0 +1,75 @@
+{
+  "@@locale": "es",
+  "appTitle": "Gist",
+  "@appTitle": {
+    "description": "El título de la aplicación"
+  },
+  "demoScreen": "Pantalla de Demostración",
+  "@demoScreen": {
+    "description": "Título de la pantalla de demostración"
+  },
+  "detailScreen": "Pantalla de Detalles",
+  "@detailScreen": {
+    "description": "Título de la pantalla de detalles"
+  },
+  "getAnotherJoke": "Obtener Otro Chiste",
+  "@getAnotherJoke": {
+    "description": "Botón para obtener otro chiste"
+  },
+  "viewDetails": "Ver Detalles",
+  "@viewDetails": {
+    "description": "Botón para ver los detalles del chiste"
+  },
+  "goBack": "Volver",
+  "@goBack": {
+    "description": "Botón para volver atrás"
+  },
+  "error": "Error",
+  "@error": {
+    "description": "Título de error"
+  },
+  "tryAgain": "Intentar de Nuevo",
+  "@tryAgain": {
+    "description": "Botón de intentar de nuevo"
+  },
+  "jokeDetails": "Detalles del Chiste",
+  "@jokeDetails": {
+    "description": "Título de detalles del chiste"
+  },
+  "noJokeProvided": "No se proporcionó ningún chiste",
+  "@noJokeProvided": {
+    "description": "Mensaje cuando no se proporciona un chiste"
+  },
+  "noJokeLoaded": "No se cargó ningún chiste",
+  "@noJokeLoaded": {
+    "description": "Mensaje cuando no se carga un chiste"
+  },
+  "toggleTheme": "Cambiar Tema",
+  "@toggleTheme": {
+    "description": "Tooltip para el botón de cambio de tema"
+  },
+  "loading": "Cargando...",
+  "@loading": {
+    "description": "Mensaje de carga"
+  },
+  "serverError": "Ocurrió un error en el servidor",
+  "@serverError": {
+    "description": "Mensaje de error del servidor"
+  },
+  "networkError": "Sin conexión a internet",
+  "@networkError": {
+    "description": "Mensaje de error de red"
+  },
+  "language": "Idioma",
+  "@language": {
+    "description": "Etiqueta de idioma"
+  },
+  "english": "Inglés",
+  "@english": {
+    "description": "Opción de idioma inglés"
+  },
+  "spanish": "Español",
+  "@spanish": {
+    "description": "Opción de idioma español"
+  }
+}

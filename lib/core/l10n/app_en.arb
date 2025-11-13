@@ -1,0 +1,75 @@
+{
+  "@@locale": "en",
+  "appTitle": "Gist",
+  "@appTitle": {
+    "description": "The application title"
+  },
+  "demoScreen": "Demo Screen",
+  "@demoScreen": {
+    "description": "Demo screen title"
+  },
+  "detailScreen": "Detail Screen",
+  "@detailScreen": {
+    "description": "Detail screen title"
+  },
+  "getAnotherJoke": "Get Another Joke",
+  "@getAnotherJoke": {
+    "description": "Button to fetch another joke"
+  },
+  "viewDetails": "View Details",
+  "@viewDetails": {
+    "description": "Button to view joke details"
+  },
+  "goBack": "Go Back",
+  "@goBack": {
+    "description": "Button to go back"
+  },
+  "error": "Error",
+  "@error": {
+    "description": "Error title"
+  },
+  "tryAgain": "Try Again",
+  "@tryAgain": {
+    "description": "Try again button"
+  },
+  "jokeDetails": "Joke Details",
+  "@jokeDetails": {
+    "description": "Joke details title"
+  },
+  "noJokeProvided": "No joke provided",
+  "@noJokeProvided": {
+    "description": "Message when no joke is provided"
+  },
+  "noJokeLoaded": "No joke loaded",
+  "@noJokeLoaded": {
+    "description": "Message when no joke is loaded"
+  },
+  "toggleTheme": "Toggle Theme",
+  "@toggleTheme": {
+    "description": "Tooltip for theme toggle button"
+  },
+  "loading": "Loading...",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "serverError": "Server error occurred",
+  "@serverError": {
+    "description": "Server error message"
+  },
+  "networkError": "No internet connection",
+  "@networkError": {
+    "description": "Network error message"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language label"
+  },
+  "english": "English",
+  "@english": {
+    "description": "English language option"
+  },
+  "spanish": "Spanish",
+  "@spanish": {
+    "description": "Spanish language option"
+  }
+}
